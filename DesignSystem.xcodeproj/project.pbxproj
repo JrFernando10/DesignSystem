@@ -16,6 +16,51 @@
 		ED047CD92CD56B82002EB596 /* DesignSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CD82CD56B82002EB596 /* DesignSystemTests.swift */; };
 		ED047CE32CD56B82002EB596 /* DesignSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CE22CD56B82002EB596 /* DesignSystemUITests.swift */; };
 		ED047CE52CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */; };
+		EDAF41972CD5867F009FD470 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAF416F2CD5867F009FD470 /* Contents.json */; };
+		EDAF41982CD5867F009FD470 /* DesignSystemCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41722CD5867F009FD470 /* DesignSystemCellViewController.swift */; };
+		EDAF41992CD5867F009FD470 /* DesignSystemCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41732CD5867F009FD470 /* DesignSystemCellBuilder.swift */; };
+		EDAF419A2CD5867F009FD470 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41762CD5867F009FD470 /* ColorCell.swift */; };
+		EDAF419B2CD5867F009FD470 /* DesignSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */; };
+		EDAF419C2CD5867F009FD470 /* DesignSystemSpacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41792CD5867F009FD470 /* DesignSystemSpacingViewController.swift */; };
+		EDAF419D2CD5867F009FD470 /* DesignSystemTypographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF417B2CD5867F009FD470 /* DesignSystemTypographyViewController.swift */; };
+		EDAF419E2CD5867F009FD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF417D2CD5867F009FD470 /* LaunchScreen.storyboard */; };
+		EDAF419F2CD5867F009FD470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF417F2CD5867F009FD470 /* Main.storyboard */; };
+		EDAF41A02CD5867F009FD470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41812CD5867F009FD470 /* Assets.xcassets */; };
+		EDAF41A12CD5867F009FD470 /* DSSDynamicTokens.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41842CD5867F009FD470 /* DSSDynamicTokens.json */; };
+		EDAF41A22CD5867F009FD470 /* Tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41852CD5867F009FD470 /* Tokens.json */; };
+		EDAF41A32CD5867F009FD470 /* DSTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41882CD5867F009FD470 /* DSTextCell.swift */; };
+		EDAF41A42CD5867F009FD470 /* DSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41892CD5867F009FD470 /* DSTextView.swift */; };
+		EDAF41A52CD5867F009FD470 /* DesignTokenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF418B2CD5867F009FD470 /* DesignTokenMapper.swift */; };
+		EDAF41A62CD5867F009FD470 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF418C2CD5867F009FD470 /* ResourceLoader.swift */; };
+		EDAF41A72CD5867F009FD470 /* DynamicColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF418E2CD5867F009FD470 /* DynamicColorEnum.swift */; };
+		EDAF41A82CD5867F009FD470 /* DSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF418F2CD5867F009FD470 /* DSColor.swift */; };
+		EDAF41A92CD5867F009FD470 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41912CD5867F009FD470 /* UIColor+Extension.swift */; };
+		EDAF41AA2CD5867F009FD470 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41922CD5867F009FD470 /* UIView+Extensions.swift */; };
+		EDAF41AB2CD5867F009FD470 /* NSNumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41932CD5867F009FD470 /* NSNumberFormatter+Extensions.swift */; };
+		EDAF41AC2CD5867F009FD470 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41942CD5867F009FD470 /* Dictionary+Extensions.swift */; };
+		EDAF41AD2CD5867F009FD470 /* DSSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41962CD5867F009FD470 /* DSSpacing.swift */; };
+		EDAF41B22CD58711009FD470 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41B12CD58711009FD470 /* Nunito-Black.ttf */; };
+		EDAF41CB2CD5876D009FD470 /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C12CD5876C009FD470 /* Sarabun-Bold.ttf */; };
+		EDAF41CC2CD5876D009FD470 /* Sarabun-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C22CD5876C009FD470 /* Sarabun-LightItalic.ttf */; };
+		EDAF41CD2CD5876D009FD470 /* Sarabun-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C32CD5876C009FD470 /* Sarabun-Medium.ttf */; };
+		EDAF41CE2CD5876D009FD470 /* Sarabun-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C42CD5876C009FD470 /* Sarabun-ExtraBoldItalic.ttf */; };
+		EDAF41CF2CD5876D009FD470 /* Sarabun-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C52CD5876D009FD470 /* Sarabun-BoldItalic.ttf */; };
+		EDAF41D02CD5876D009FD470 /* Sarabun-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C62CD5876D009FD470 /* Sarabun-Italic.ttf */; };
+		EDAF41D12CD5876D009FD470 /* Sarabun-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C72CD5876D009FD470 /* Sarabun-MediumItalic.ttf */; };
+		EDAF41D22CD5876D009FD470 /* Sarabun-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C82CD5876D009FD470 /* Sarabun-ExtraBold.ttf */; };
+		EDAF41D32CD5876D009FD470 /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41C92CD5876D009FD470 /* Sarabun-Light.ttf */; };
+		EDAF41D42CD5876D009FD470 /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41CA2CD5876D009FD470 /* Sarabun-Regular.ttf */; };
+		EDAF41E02CD58782009FD470 /* Muli-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41D52CD58781009FD470 /* Muli-BoldItalic.ttf */; };
+		EDAF41E12CD58782009FD470 /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41D62CD58781009FD470 /* Muli-Bold.ttf */; };
+		EDAF41E22CD58782009FD470 /* Muli-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41D72CD58781009FD470 /* Muli-Light.ttf */; };
+		EDAF41E32CD58782009FD470 /* Muli-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41D82CD58781009FD470 /* Muli-Italic.ttf */; };
+		EDAF41E42CD58782009FD470 /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41D92CD58782009FD470 /* Muli-SemiBold.ttf */; };
+		EDAF41E52CD58782009FD470 /* Muli-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DA2CD58782009FD470 /* Muli-SemiBoldItalic.ttf */; };
+		EDAF41E62CD58782009FD470 /* Muli-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DB2CD58782009FD470 /* Muli-LightItalic.ttf */; };
+		EDAF41E72CD58782009FD470 /* Muli-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DC2CD58782009FD470 /* Muli-ExtraBold.ttf */; };
+		EDAF41E82CD58782009FD470 /* Muli-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DD2CD58782009FD470 /* Muli-ExtraLight.ttf */; };
+		EDAF41E92CD58782009FD470 /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DE2CD58782009FD470 /* Muli-Regular.ttf */; };
+		EDAF41EA2CD58782009FD470 /* Muli-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DF2CD58782009FD470 /* Muli-ExtraLightItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +94,64 @@
 		ED047CDE2CD56B82002EB596 /* DesignSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED047CE22CD56B82002EB596 /* DesignSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemUITests.swift; sourceTree = "<group>"; };
 		ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDAF416F2CD5867F009FD470 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		EDAF41722CD5867F009FD470 /* DesignSystemCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemCellViewController.swift; sourceTree = "<group>"; };
+		EDAF41732CD5867F009FD470 /* DesignSystemCellBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemCellBuilder.swift; sourceTree = "<group>"; };
+		EDAF41762CD5867F009FD470 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemViewController.swift; sourceTree = "<group>"; };
+		EDAF41792CD5867F009FD470 /* DesignSystemSpacingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemSpacingViewController.swift; sourceTree = "<group>"; };
+		EDAF417B2CD5867F009FD470 /* DesignSystemTypographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemTypographyViewController.swift; sourceTree = "<group>"; };
+		EDAF417E2CD5867F009FD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDAF41802CD5867F009FD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		EDAF41812CD5867F009FD470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDAF41842CD5867F009FD470 /* DSSDynamicTokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DSSDynamicTokens.json; sourceTree = "<group>"; };
+		EDAF41852CD5867F009FD470 /* Tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tokens.json; sourceTree = "<group>"; };
+		EDAF41882CD5867F009FD470 /* DSTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSTextCell.swift; sourceTree = "<group>"; };
+		EDAF41892CD5867F009FD470 /* DSTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSTextView.swift; sourceTree = "<group>"; };
+		EDAF418B2CD5867F009FD470 /* DesignTokenMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignTokenMapper.swift; sourceTree = "<group>"; };
+		EDAF418C2CD5867F009FD470 /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		EDAF418E2CD5867F009FD470 /* DynamicColorEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicColorEnum.swift; sourceTree = "<group>"; };
+		EDAF418F2CD5867F009FD470 /* DSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSColor.swift; sourceTree = "<group>"; };
+		EDAF41912CD5867F009FD470 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EDAF41922CD5867F009FD470 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		EDAF41932CD5867F009FD470 /* NSNumberFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		EDAF41942CD5867F009FD470 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		EDAF41962CD5867F009FD470 /* DSSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSSpacing.swift; sourceTree = "<group>"; };
+		EDAF41B12CD58711009FD470 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		EDAF41B32CD5871E009FD470 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41B42CD5871E009FD470 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41B52CD5871E009FD470 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41B62CD5871E009FD470 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		EDAF41B72CD5871E009FD470 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41B82CD5871E009FD470 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EDAF41B92CD5871E009FD470 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41BB2CD5871E009FD470 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		EDAF41BC2CD5871E009FD470 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EDAF41BD2CD5871E009FD470 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41BE2CD5871E009FD470 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		EDAF41BF2CD5871F009FD470 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		EDAF41C02CD5871F009FD470 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		EDAF41C12CD5876C009FD470 /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Bold.ttf"; sourceTree = "<group>"; };
+		EDAF41C22CD5876C009FD470 /* Sarabun-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-LightItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41C32CD5876C009FD470 /* Sarabun-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Medium.ttf"; sourceTree = "<group>"; };
+		EDAF41C42CD5876C009FD470 /* Sarabun-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41C52CD5876D009FD470 /* Sarabun-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41C62CD5876D009FD470 /* Sarabun-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Italic.ttf"; sourceTree = "<group>"; };
+		EDAF41C72CD5876D009FD470 /* Sarabun-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41C82CD5876D009FD470 /* Sarabun-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EDAF41C92CD5876D009FD470 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Light.ttf"; sourceTree = "<group>"; };
+		EDAF41CA2CD5876D009FD470 /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sarabun-Regular.ttf"; sourceTree = "<group>"; };
+		EDAF41D52CD58781009FD470 /* Muli-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41D62CD58781009FD470 /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
+		EDAF41D72CD58781009FD470 /* Muli-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Light.ttf"; sourceTree = "<group>"; };
+		EDAF41D82CD58781009FD470 /* Muli-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Italic.ttf"; sourceTree = "<group>"; };
+		EDAF41D92CD58782009FD470 /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
+		EDAF41DA2CD58782009FD470 /* Muli-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41DB2CD58782009FD470 /* Muli-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-LightItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41DC2CD58782009FD470 /* Muli-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EDAF41DD2CD58782009FD470 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EDAF41DE2CD58782009FD470 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
+		EDAF41DF2CD58782009FD470 /* Muli-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +202,12 @@
 		ED047CC02CD56B80002EB596 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF41812CD5867F009FD470 /* Assets.xcassets */,
+				EDAF417C2CD5867F009FD470 /* Base.lproj */,
+				EDAF416F2CD5867F009FD470 /* Contents.json */,
+				EDAF41702CD5867F009FD470 /* Controllers */,
+				EDAF41822CD5867F009FD470 /* Resources */,
+				EDAF41862CD5867F009FD470 /* Sources */,
 				ED047CC12CD56B80002EB596 /* AppDelegate.swift */,
 				ED047CC32CD56B80002EB596 /* SceneDelegate.swift */,
 				ED047CC52CD56B80002EB596 /* ViewController.swift */,
@@ -125,6 +234,202 @@
 				ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */,
 			);
 			path = DesignSystemUITests;
+			sourceTree = "<group>";
+		};
+		EDAF41702CD5867F009FD470 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41712CD5867F009FD470 /* Cell */,
+				EDAF41742CD5867F009FD470 /* Colors */,
+				EDAF41782CD5867F009FD470 /* Spacing */,
+				EDAF417A2CD5867F009FD470 /* Typography */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDAF41712CD5867F009FD470 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41722CD5867F009FD470 /* DesignSystemCellViewController.swift */,
+				EDAF41732CD5867F009FD470 /* DesignSystemCellBuilder.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EDAF41742CD5867F009FD470 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41752CD5867F009FD470 /* Cells */,
+				EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		EDAF41752CD5867F009FD470 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41762CD5867F009FD470 /* ColorCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EDAF41782CD5867F009FD470 /* Spacing */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41792CD5867F009FD470 /* DesignSystemSpacingViewController.swift */,
+			);
+			path = Spacing;
+			sourceTree = "<group>";
+		};
+		EDAF417A2CD5867F009FD470 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF417B2CD5867F009FD470 /* DesignSystemTypographyViewController.swift */,
+			);
+			path = Typography;
+			sourceTree = "<group>";
+		};
+		EDAF417C2CD5867F009FD470 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF417D2CD5867F009FD470 /* LaunchScreen.storyboard */,
+				EDAF417F2CD5867F009FD470 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		EDAF41822CD5867F009FD470 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41B02CD586EA009FD470 /* Muli */,
+				EDAF41AF2CD586DF009FD470 /* Sarabun */,
+				EDAF41AE2CD586D5009FD470 /* Nunito */,
+				EDAF41832CD5867F009FD470 /* DS */,
+				EDAF41852CD5867F009FD470 /* Tokens.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDAF41832CD5867F009FD470 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41842CD5867F009FD470 /* DSSDynamicTokens.json */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		EDAF41862CD5867F009FD470 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41872CD5867F009FD470 /* Cells */,
+				EDAF418A2CD5867F009FD470 /* Config */,
+				EDAF418D2CD5867F009FD470 /* Color */,
+				EDAF41902CD5867F009FD470 /* Extensions */,
+				EDAF41952CD5867F009FD470 /* Spacing */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDAF41872CD5867F009FD470 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41882CD5867F009FD470 /* DSTextCell.swift */,
+				EDAF41892CD5867F009FD470 /* DSTextView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EDAF418A2CD5867F009FD470 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF418B2CD5867F009FD470 /* DesignTokenMapper.swift */,
+				EDAF418C2CD5867F009FD470 /* ResourceLoader.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EDAF418D2CD5867F009FD470 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF418E2CD5867F009FD470 /* DynamicColorEnum.swift */,
+				EDAF418F2CD5867F009FD470 /* DSColor.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		EDAF41902CD5867F009FD470 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41912CD5867F009FD470 /* UIColor+Extension.swift */,
+				EDAF41922CD5867F009FD470 /* UIView+Extensions.swift */,
+				EDAF41932CD5867F009FD470 /* NSNumberFormatter+Extensions.swift */,
+				EDAF41942CD5867F009FD470 /* Dictionary+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDAF41952CD5867F009FD470 /* Spacing */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41962CD5867F009FD470 /* DSSpacing.swift */,
+			);
+			path = Spacing;
+			sourceTree = "<group>";
+		};
+		EDAF41AE2CD586D5009FD470 /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41B42CD5871E009FD470 /* Nunito-BlackItalic.ttf */,
+				EDAF41BE2CD5871E009FD470 /* Nunito-Bold.ttf */,
+				EDAF41B72CD5871E009FD470 /* Nunito-BoldItalic.ttf */,
+				EDAF41B82CD5871E009FD470 /* Nunito-ExtraBold.ttf */,
+				EDAF41B92CD5871E009FD470 /* Nunito-ExtraBoldItalic.ttf */,
+				EDAF41BC2CD5871E009FD470 /* Nunito-ExtraLight.ttf */,
+				EDAF41B52CD5871E009FD470 /* Nunito-ExtraLightItalic.ttf */,
+				EDAF41C02CD5871F009FD470 /* Nunito-Italic.ttf */,
+				EDAF41BF2CD5871F009FD470 /* Nunito-Light.ttf */,
+				EDAF41B32CD5871E009FD470 /* Nunito-LightItalic.ttf */,
+				EDAF41BB2CD5871E009FD470 /* Nunito-Regular.ttf */,
+				EDAF41B62CD5871E009FD470 /* Nunito-SemiBold.ttf */,
+				EDAF41BD2CD5871E009FD470 /* Nunito-SemiBoldItalic.ttf */,
+				EDAF41B12CD58711009FD470 /* Nunito-Black.ttf */,
+			);
+			path = Nunito;
+			sourceTree = "<group>";
+		};
+		EDAF41AF2CD586DF009FD470 /* Sarabun */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41C12CD5876C009FD470 /* Sarabun-Bold.ttf */,
+				EDAF41C52CD5876D009FD470 /* Sarabun-BoldItalic.ttf */,
+				EDAF41C82CD5876D009FD470 /* Sarabun-ExtraBold.ttf */,
+				EDAF41C42CD5876C009FD470 /* Sarabun-ExtraBoldItalic.ttf */,
+				EDAF41C62CD5876D009FD470 /* Sarabun-Italic.ttf */,
+				EDAF41C92CD5876D009FD470 /* Sarabun-Light.ttf */,
+				EDAF41C22CD5876C009FD470 /* Sarabun-LightItalic.ttf */,
+				EDAF41C32CD5876C009FD470 /* Sarabun-Medium.ttf */,
+				EDAF41C72CD5876D009FD470 /* Sarabun-MediumItalic.ttf */,
+				EDAF41CA2CD5876D009FD470 /* Sarabun-Regular.ttf */,
+			);
+			path = Sarabun;
+			sourceTree = "<group>";
+		};
+		EDAF41B02CD586EA009FD470 /* Muli */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41D62CD58781009FD470 /* Muli-Bold.ttf */,
+				EDAF41D52CD58781009FD470 /* Muli-BoldItalic.ttf */,
+				EDAF41DC2CD58782009FD470 /* Muli-ExtraBold.ttf */,
+				EDAF41DD2CD58782009FD470 /* Muli-ExtraLight.ttf */,
+				EDAF41DF2CD58782009FD470 /* Muli-ExtraLightItalic.ttf */,
+				EDAF41D82CD58781009FD470 /* Muli-Italic.ttf */,
+				EDAF41D72CD58781009FD470 /* Muli-Light.ttf */,
+				EDAF41DB2CD58782009FD470 /* Muli-LightItalic.ttf */,
+				EDAF41DE2CD58782009FD470 /* Muli-Regular.ttf */,
+				EDAF41D92CD58782009FD470 /* Muli-SemiBold.ttf */,
+				EDAF41DA2CD58782009FD470 /* Muli-SemiBoldItalic.ttf */,
+			);
+			path = Muli;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +536,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAF41A12CD5867F009FD470 /* DSSDynamicTokens.json in Resources */,
+				EDAF41B22CD58711009FD470 /* Nunito-Black.ttf in Resources */,
+				EDAF41CD2CD5876D009FD470 /* Sarabun-Medium.ttf in Resources */,
+				EDAF41CB2CD5876D009FD470 /* Sarabun-Bold.ttf in Resources */,
 				ED047CCE2CD56B81002EB596 /* LaunchScreen.storyboard in Resources */,
 				ED047CCB2CD56B81002EB596 /* Assets.xcassets in Resources */,
+				EDAF41A22CD5867F009FD470 /* Tokens.json in Resources */,
+				EDAF41D22CD5876D009FD470 /* Sarabun-ExtraBold.ttf in Resources */,
+				EDAF41E12CD58782009FD470 /* Muli-Bold.ttf in Resources */,
+				EDAF41E42CD58782009FD470 /* Muli-SemiBold.ttf in Resources */,
 				ED047CC92CD56B80002EB596 /* Main.storyboard in Resources */,
+				EDAF41E62CD58782009FD470 /* Muli-LightItalic.ttf in Resources */,
+				EDAF419F2CD5867F009FD470 /* Main.storyboard in Resources */,
+				EDAF41E52CD58782009FD470 /* Muli-SemiBoldItalic.ttf in Resources */,
+				EDAF41A02CD5867F009FD470 /* Assets.xcassets in Resources */,
+				EDAF41D32CD5876D009FD470 /* Sarabun-Light.ttf in Resources */,
+				EDAF41E32CD58782009FD470 /* Muli-Italic.ttf in Resources */,
+				EDAF41D12CD5876D009FD470 /* Sarabun-MediumItalic.ttf in Resources */,
+				EDAF41E92CD58782009FD470 /* Muli-Regular.ttf in Resources */,
+				EDAF41E22CD58782009FD470 /* Muli-Light.ttf in Resources */,
+				EDAF419E2CD5867F009FD470 /* LaunchScreen.storyboard in Resources */,
+				EDAF41CE2CD5876D009FD470 /* Sarabun-ExtraBoldItalic.ttf in Resources */,
+				EDAF41CC2CD5876D009FD470 /* Sarabun-LightItalic.ttf in Resources */,
+				EDAF41E82CD58782009FD470 /* Muli-ExtraLight.ttf in Resources */,
+				EDAF41D02CD5876D009FD470 /* Sarabun-Italic.ttf in Resources */,
+				EDAF41972CD5867F009FD470 /* Contents.json in Resources */,
+				EDAF41EA2CD58782009FD470 /* Muli-ExtraLightItalic.ttf in Resources */,
+				EDAF41E02CD58782009FD470 /* Muli-BoldItalic.ttf in Resources */,
+				EDAF41D42CD5876D009FD470 /* Sarabun-Regular.ttf in Resources */,
+				EDAF41CF2CD5876D009FD470 /* Sarabun-BoldItalic.ttf in Resources */,
+				EDAF41E72CD58782009FD470 /* Muli-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +591,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAF41A72CD5867F009FD470 /* DynamicColorEnum.swift in Sources */,
 				ED047CC62CD56B80002EB596 /* ViewController.swift in Sources */,
+				EDAF41A82CD5867F009FD470 /* DSColor.swift in Sources */,
+				EDAF41992CD5867F009FD470 /* DesignSystemCellBuilder.swift in Sources */,
+				EDAF41982CD5867F009FD470 /* DesignSystemCellViewController.swift in Sources */,
+				EDAF41A42CD5867F009FD470 /* DSTextView.swift in Sources */,
+				EDAF41AA2CD5867F009FD470 /* UIView+Extensions.swift in Sources */,
 				ED047CC22CD56B80002EB596 /* AppDelegate.swift in Sources */,
+				EDAF41AC2CD5867F009FD470 /* Dictionary+Extensions.swift in Sources */,
+				EDAF41A92CD5867F009FD470 /* UIColor+Extension.swift in Sources */,
 				ED047CC42CD56B80002EB596 /* SceneDelegate.swift in Sources */,
+				EDAF41A52CD5867F009FD470 /* DesignTokenMapper.swift in Sources */,
+				EDAF419C2CD5867F009FD470 /* DesignSystemSpacingViewController.swift in Sources */,
+				EDAF41A62CD5867F009FD470 /* ResourceLoader.swift in Sources */,
+				EDAF41AD2CD5867F009FD470 /* DSSpacing.swift in Sources */,
+				EDAF419B2CD5867F009FD470 /* DesignSystemViewController.swift in Sources */,
+				EDAF41AB2CD5867F009FD470 /* NSNumberFormatter+Extensions.swift in Sources */,
+				EDAF41A32CD5867F009FD470 /* DSTextCell.swift in Sources */,
+				EDAF419D2CD5867F009FD470 /* DesignSystemTypographyViewController.swift in Sources */,
+				EDAF419A2CD5867F009FD470 /* ColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +661,22 @@
 				ED047CCD2CD56B81002EB596 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDAF417D2CD5867F009FD470 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAF417E2CD5867F009FD470 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDAF417F2CD5867F009FD470 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDAF41802CD5867F009FD470 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

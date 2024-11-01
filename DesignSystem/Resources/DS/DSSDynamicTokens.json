@@ -1,0 +1,19 @@
+{
+    "foundation": [
+        {
+            "name": "interactive-main",
+            "value": "color-mandy-25",
+            "type": "color"
+        },
+        {
+            "name": "conversion-default",
+            "value": "color-redRibbon-5",
+            "type": "color"
+        },
+        {
+            "name": "background-main",
+            "value": "color-downRiver-500",
+            "type": "color"
+        }
+    ]
+}
