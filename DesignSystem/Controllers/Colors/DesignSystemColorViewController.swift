@@ -7,14 +7,7 @@
 
 import UIKit
 
-class DesignSystemViewController: UIViewController {
-    
-    private lazy var segmentedControl: UISegmentedControl = {
-        let control = UISegmentedControl(items: ["C1", "C2"])
-        control.selectedSegmentIndex = 0
-        return control
-    }()
-    
+final class DesignSystemColorViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let table = UITableView()
@@ -27,26 +20,12 @@ class DesignSystemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         TokenManager.shared.loadStrategies(theme: .default)
-        segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged), for: .valueChanged)
         buildView()
     }
     
-    @objc func segmentedControlValueChanged() {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            TokenManager.shared.loadStrategies(theme: .default)
-        case 1:
-            TokenManager.shared.loadStrategies(theme: .designsystem)
-        default:
-            break
-        }
-        tableView.reloadData()
-    }
-    
-    
     func buildView() {
-        navigationItem.titleView = segmentedControl
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -57,43 +36,31 @@ class DesignSystemViewController: UIViewController {
         ])
         
     }
-    
 }
 
-extension DesignSystemViewController: UITableViewDataSource {
+extension DesignSystemColorViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "Dynamic Tokens" : "Static Tokens"
+        return "Static Tokens"
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        2
+        1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return DynamicColorEnum.allCases.count
-        }
         return ColorEnum.allCases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: indexPath) as! ColorCell
-        
-        if indexPath.section == 0 {
-            let color = DynamicColorEnum.allCases[indexPath.row]
-            cell.fill(dto: ColorCellViewDTO(colorName: color.rawValue, color: color.color()))
-            return cell
-        }
-        
         let color = ColorEnum.allCases[indexPath.row]
         cell.fill(dto: ColorCellViewDTO(colorName: color.rawValue, color: color.color()))
-        
         return cell
     }
 }
 
-extension DesignSystemViewController: UITableViewDelegate {
+extension DesignSystemColorViewController: UITableViewDelegate {
     
 }
 

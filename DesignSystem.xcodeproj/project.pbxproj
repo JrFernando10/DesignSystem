@@ -13,14 +13,11 @@
 		ED047CC92CD56B80002EB596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED047CC72CD56B80002EB596 /* Main.storyboard */; };
 		ED047CCB2CD56B81002EB596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED047CCA2CD56B81002EB596 /* Assets.xcassets */; };
 		ED047CCE2CD56B81002EB596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED047CCC2CD56B81002EB596 /* LaunchScreen.storyboard */; };
-		ED047CD92CD56B82002EB596 /* DesignSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CD82CD56B82002EB596 /* DesignSystemTests.swift */; };
-		ED047CE32CD56B82002EB596 /* DesignSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CE22CD56B82002EB596 /* DesignSystemUITests.swift */; };
-		ED047CE52CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */; };
 		EDAF41972CD5867F009FD470 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = EDAF416F2CD5867F009FD470 /* Contents.json */; };
 		EDAF41982CD5867F009FD470 /* DesignSystemCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41722CD5867F009FD470 /* DesignSystemCellViewController.swift */; };
 		EDAF41992CD5867F009FD470 /* DesignSystemCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41732CD5867F009FD470 /* DesignSystemCellBuilder.swift */; };
 		EDAF419A2CD5867F009FD470 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41762CD5867F009FD470 /* ColorCell.swift */; };
-		EDAF419B2CD5867F009FD470 /* DesignSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */; };
+		EDAF419B2CD5867F009FD470 /* DesignSystemColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41772CD5867F009FD470 /* DesignSystemColorViewController.swift */; };
 		EDAF419C2CD5867F009FD470 /* DesignSystemSpacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41792CD5867F009FD470 /* DesignSystemSpacingViewController.swift */; };
 		EDAF419D2CD5867F009FD470 /* DesignSystemTypographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF417B2CD5867F009FD470 /* DesignSystemTypographyViewController.swift */; };
 		EDAF419E2CD5867F009FD470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF417D2CD5867F009FD470 /* LaunchScreen.storyboard */; };
@@ -90,15 +87,12 @@
 		ED047CCD2CD56B81002EB596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED047CCF2CD56B81002EB596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED047CD42CD56B82002EB596 /* DesignSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED047CD82CD56B82002EB596 /* DesignSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemTests.swift; sourceTree = "<group>"; };
 		ED047CDE2CD56B82002EB596 /* DesignSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED047CE22CD56B82002EB596 /* DesignSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemUITests.swift; sourceTree = "<group>"; };
-		ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EDAF416F2CD5867F009FD470 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		EDAF41722CD5867F009FD470 /* DesignSystemCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemCellViewController.swift; sourceTree = "<group>"; };
 		EDAF41732CD5867F009FD470 /* DesignSystemCellBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemCellBuilder.swift; sourceTree = "<group>"; };
 		EDAF41762CD5867F009FD470 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
-		EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemViewController.swift; sourceTree = "<group>"; };
+		EDAF41772CD5867F009FD470 /* DesignSystemColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemColorViewController.swift; sourceTree = "<group>"; };
 		EDAF41792CD5867F009FD470 /* DesignSystemSpacingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemSpacingViewController.swift; sourceTree = "<group>"; };
 		EDAF417B2CD5867F009FD470 /* DesignSystemTypographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystemTypographyViewController.swift; sourceTree = "<group>"; };
 		EDAF417E2CD5867F009FD470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -183,8 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				ED047CC02CD56B80002EB596 /* DesignSystem */,
-				ED047CD72CD56B82002EB596 /* DesignSystemTests */,
-				ED047CE12CD56B82002EB596 /* DesignSystemUITests */,
 				ED047CBF2CD56B80002EB596 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -219,23 +211,6 @@
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
-		ED047CD72CD56B82002EB596 /* DesignSystemTests */ = {
-			isa = PBXGroup;
-			children = (
-				ED047CD82CD56B82002EB596 /* DesignSystemTests.swift */,
-			);
-			path = DesignSystemTests;
-			sourceTree = "<group>";
-		};
-		ED047CE12CD56B82002EB596 /* DesignSystemUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ED047CE22CD56B82002EB596 /* DesignSystemUITests.swift */,
-				ED047CE42CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift */,
-			);
-			path = DesignSystemUITests;
-			sourceTree = "<group>";
-		};
 		EDAF41702CD5867F009FD470 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAF41752CD5867F009FD470 /* Cells */,
-				EDAF41772CD5867F009FD470 /* DesignSystemViewController.swift */,
+				EDAF41772CD5867F009FD470 /* DesignSystemColorViewController.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -606,7 +581,7 @@
 				EDAF419C2CD5867F009FD470 /* DesignSystemSpacingViewController.swift in Sources */,
 				EDAF41A62CD5867F009FD470 /* ResourceLoader.swift in Sources */,
 				EDAF41AD2CD5867F009FD470 /* DSSpacing.swift in Sources */,
-				EDAF419B2CD5867F009FD470 /* DesignSystemViewController.swift in Sources */,
+				EDAF419B2CD5867F009FD470 /* DesignSystemColorViewController.swift in Sources */,
 				EDAF41AB2CD5867F009FD470 /* NSNumberFormatter+Extensions.swift in Sources */,
 				EDAF41A32CD5867F009FD470 /* DSTextCell.swift in Sources */,
 				EDAF419D2CD5867F009FD470 /* DesignSystemTypographyViewController.swift in Sources */,
@@ -618,7 +593,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED047CD92CD56B82002EB596 /* DesignSystemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,8 +600,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED047CE32CD56B82002EB596 /* DesignSystemUITests.swift in Sources */,
-				ED047CE52CD56B82002EB596 /* DesignSystemUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

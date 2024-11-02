@@ -20,7 +20,7 @@ class DesignSystemSpacingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .ds(.backgroundMain)
+        view.backgroundColor = .white
         setup()
     }
     
@@ -31,10 +31,9 @@ class DesignSystemSpacingViewController: UIViewController {
             view.translatesAutoresizingMaskIntoConstraints = false
             view.heightAnchor.constraint(equalToConstant: .dsSpacing(token)).isActive = true
             view.widthAnchor.constraint(equalToConstant: .dsSpacing(token)).isActive = true
-            view.backgroundColor = .ds(.interactiveMain)
+            view.backgroundColor = .ds(.downRiver50)
             stackView.addArrangedSubview(view)
         }
-        
         setupConstraints()
     }
     

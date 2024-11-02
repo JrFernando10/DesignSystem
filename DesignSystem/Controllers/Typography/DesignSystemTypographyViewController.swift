@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 class DesignSystemTypographyViewController: UIViewController {
-    
-    // Declare UI elements
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -22,14 +20,12 @@ class DesignSystemTypographyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .ds(.backgroundMain)
+        view.backgroundColor = .white
         setup()
     }
     
     func setup() {
         view.addSubview(stackView)
-        
-        
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "Nunito-Bold", size: 16)
@@ -40,8 +36,6 @@ class DesignSystemTypographyViewController: UIViewController {
     }
     
     func setupConstraints() {
-        // Set up constraints for stackView
-        
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .dsSpacing(.token200)),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .dsSpacing(.token100)),

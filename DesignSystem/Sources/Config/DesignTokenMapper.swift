@@ -33,11 +33,15 @@ public class TokenManager {
     private var selectedTheme = Themes.default
     
     public func loadStrategies(theme: Themes = .default) {
+        
         selectedTheme = theme
+        
         let tokens = loadTokens()
+        
         tokens.forEach { color in
             colors.addDictionary(dictionaryToAppend: [color.colorIdentifier: color])
         }
+        
         let dynamicTokens = loadDynamicTokens()
         dynamicTokens.forEach { color in
             dynamicColors.addDictionary(dictionaryToAppend: [color.colorIdentifier: color])

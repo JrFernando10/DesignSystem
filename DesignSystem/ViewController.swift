@@ -7,103 +7,82 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 16
-        stackView.alignment = .center
+        stackView.spacing = 0
+        stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
     
-    private lazy var colorButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Cores", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .ds(.downRiver1000)
-        button.addTarget(self, action: #selector(colorButtonTapped), for: .touchUpInside)
-        return button
+    private lazy var buttons: [UIButton] = {
+        let titles = ["Colors", "Spacing", "Typography", "Cells"]
+        return titles.map { title in
+            let button = UIButton()
+            button.setTitle(title, for: .normal)
+            button.setTitleColor(.ds(.grey900), for: .normal)
+            button.backgroundColor = .ds(.interactiveMain)
+            button.contentHorizontalAlignment = .left
+            button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+            return button
+        }
     }()
     
-    private lazy var cellsButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Cells", for: .normal)
-        button.setTitleColor(.ds(.grey1000), for: .normal)
-        button.backgroundColor = .ds(.downRiver1000)
-        button.addTarget(self, action: #selector(cellsButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
-    private lazy var spacingButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Spacing", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .ds(.downRiver1000)
-        button.addTarget(self, action: #selector(spacingButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
-    private lazy var typographyButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Typography", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .ds(.downRiver1000)
-        button.addTarget(self, action: #selector(typographyButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .ds(.grey10)
+        title = "DesignSystem"
         setup()
     }
     
     func setup() {
         view.addSubview(stackView)
-        stackView.addArrangedSubview(colorButton)
-        stackView.addArrangedSubview(cellsButton)
-        stackView.addArrangedSubview(spacingButton)
-        stackView.addArrangedSubview(typographyButton)
+        buttons.forEach { button in
+            stackView.addArrangedSubview(button)
+            addSeparator()
+        }
         setupConstraints()
     }
     
-    func setupConstraints() {
-        // Set up constraints for stackView
+    private func addSeparator() {
+        let separator = UIView()
+        separator.backgroundColor = .ds(.grey200)
+        separator.translatesAutoresizingMaskIntoConstraints = false
         
+        stackView.addArrangedSubview(separator)
+        
+        separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separator.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
+        separator.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+    }
+    
+    func setupConstraints() {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .dsSpacing(.token200)),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .dsSpacing(.token100)),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.dsSpacing(.token100)),
-            
-            cellsButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: .dsSpacing(.token100)),
-            cellsButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -.dsSpacing(.token100)),
-            colorButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: .dsSpacing(.token100)),
-            colorButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -.dsSpacing(.token100)),
-            spacingButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor, constant: .dsSpacing(.token100)),
-            spacingButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor, constant: -.dsSpacing(.token100)),
         ])
     }
     
-    // Button actions
-    @objc func colorButtonTapped() {
-        let colorsVC = DesignSystemViewController()
-        self.navigationController?.pushViewController(colorsVC, animated: true)
-    }
-    
-    @objc func cellsButtonTapped() {
-        let cellsVC = DesignSystemCellViewController()
-        self.navigationController?.pushViewController(cellsVC, animated: true)
-    }
-    
-    @objc func spacingButtonTapped() {
-        let spacingVC = DesignSystemSpacingViewController()
-        self.navigationController?.pushViewController(spacingVC, animated: true)
-    }
-    
-    @objc func typographyButtonTapped() {
-        let typography = DesignSystemTypographyViewController()
-        self.navigationController?.pushViewController(typography, animated: true)
+    @objc func buttonTapped(_ sender: UIButton) {
+        switch sender.title(for: .normal) {
+        case "Colors":
+            let colorsVC = DesignSystemColorViewController()
+            self.navigationController?.pushViewController(colorsVC, animated: true)
+        case "Cells":
+            let cellsVC = DesignSystemCellViewController()
+            self.navigationController?.pushViewController(cellsVC, animated: true)
+        case "Spacing":
+            let spacingVC = DesignSystemSpacingViewController()
+            self.navigationController?.pushViewController(spacingVC, animated: true)
+        case "Typography":
+            let typographyVC = DesignSystemTypographyViewController()
+            self.navigationController?.pushViewController(typographyVC, animated: true)
+        default:
+            break
+        }
     }
 }
