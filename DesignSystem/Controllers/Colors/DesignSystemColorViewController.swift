@@ -21,6 +21,12 @@ final class DesignSystemColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        let (titleFont, titleText) = Font.nunitoExtraBold.font(size: .dsSpacing(.token200), withText: "Colors")
+        title = titleText
+        navigationController?.navigationBar.titleTextAttributes = [
+            .font: titleFont,
+            .foregroundColor: UIColor.ds(.grey1000)
+        ]
         TokenManager.shared.loadStrategies(theme: .default)
         buildView()
     }

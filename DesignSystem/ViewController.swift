@@ -34,7 +34,12 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .ds(.grey10)
-        title = "DesignSystem"
+        let (titleFont, titleText) = Font.nunitoExtraBold.font(size: .dsSpacing(.token200), withText: "DesignSystem")
+        title = titleText
+        navigationController?.navigationBar.titleTextAttributes = [
+            .font: titleFont,
+            .foregroundColor: UIColor.ds(.grey1000)
+        ]
         setup()
     }
     

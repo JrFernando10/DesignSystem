@@ -58,6 +58,7 @@
 		EDAF41E82CD58782009FD470 /* Muli-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DD2CD58782009FD470 /* Muli-ExtraLight.ttf */; };
 		EDAF41E92CD58782009FD470 /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DE2CD58782009FD470 /* Muli-Regular.ttf */; };
 		EDAF41EA2CD58782009FD470 /* Muli-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDAF41DF2CD58782009FD470 /* Muli-ExtraLightItalic.ttf */; };
+		EDAF41ED2CD65CE0009FD470 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF41EC2CD65CE0009FD470 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		EDAF41DD2CD58782009FD470 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
 		EDAF41DE2CD58782009FD470 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
 		EDAF41DF2CD58782009FD470 /* Muli-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EDAF41EC2CD65CE0009FD470 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 		EDAF41862CD5867F009FD470 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF41EB2CD65CBE009FD470 /* Typography */,
 				EDAF41872CD5867F009FD470 /* Cells */,
 				EDAF418A2CD5867F009FD470 /* Config */,
 				EDAF418D2CD5867F009FD470 /* Color */,
@@ -405,6 +408,14 @@
 				EDAF41DA2CD58782009FD470 /* Muli-SemiBoldItalic.ttf */,
 			);
 			path = Muli;
+			sourceTree = "<group>";
+		};
+		EDAF41EB2CD65CBE009FD470 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF41EC2CD65CE0009FD470 /* Font.swift */,
+			);
+			path = Typography;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +579,7 @@
 			files = (
 				EDAF41A72CD5867F009FD470 /* DynamicColorEnum.swift in Sources */,
 				ED047CC62CD56B80002EB596 /* ViewController.swift in Sources */,
+				EDAF41ED2CD65CE0009FD470 /* Font.swift in Sources */,
 				EDAF41A82CD5867F009FD470 /* DSColor.swift in Sources */,
 				EDAF41992CD5867F009FD470 /* DesignSystemCellBuilder.swift in Sources */,
 				EDAF41982CD5867F009FD470 /* DesignSystemCellViewController.swift in Sources */,
