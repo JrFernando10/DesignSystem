@@ -26,13 +26,20 @@ class DesignSystemSpacingViewController: UIViewController {
     
     func setup() {
         view.addSubview(stackView)
-        Spacing.allCases.forEach { token in
+        Spacing.allCases.filter { $0 != .none }.forEach { token in
             let view = UIView()
             view.translatesAutoresizingMaskIntoConstraints = false
             view.heightAnchor.constraint(equalToConstant: .dsSpacing(token)).isActive = true
             view.widthAnchor.constraint(equalToConstant: .dsSpacing(token)).isActive = true
             view.backgroundColor = .ds(.downRiver50)
+            
+            let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
+            label.text = "\(token.rawValue) = \(token.value())"
+            label.textAlignment = .center
+            
             stackView.addArrangedSubview(view)
+            stackView.addArrangedSubview(label)
         }
         setupConstraints()
     }
