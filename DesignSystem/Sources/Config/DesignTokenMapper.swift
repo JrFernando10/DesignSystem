@@ -24,7 +24,7 @@ public class TokenManager {
         case `default`
     }
     
-    public static var shared = TokenManager()
+    public static let shared = TokenManager()
     
     private var colors: [String: DSColor] = [:]
     private var dynamicColors: [String: DSColor] = [:]
@@ -32,26 +32,27 @@ public class TokenManager {
     
     private var selectedTheme = Themes.default
     
+    private init() {
+        loadStrategies(theme: .default)
+    }
+    
     public func loadStrategies(theme: Themes = .default) {
-        
         selectedTheme = theme
         
         let tokens = loadTokens()
-        
         tokens.forEach { color in
-            colors.addDictionary(dictionaryToAppend: [color.colorIdentifier: color])
+            colors[color.colorIdentifier] = color
         }
         
         let dynamicTokens = loadDynamicTokens()
         dynamicTokens.forEach { color in
-            dynamicColors.addDictionary(dictionaryToAppend: [color.colorIdentifier: color])
+            dynamicColors[color.colorIdentifier] = color
         }
         
         let spacingTokens = loadSpacing()
         spacingTokens.forEach { token in
-            spacing.addDictionary(dictionaryToAppend: [token.enumValue.rawValue: token])
+            spacing[token.enumValue.rawValue] = token
         }
-        
     }
     
     private func loadTokens() -> [DSColor] {
@@ -70,7 +71,6 @@ public class TokenManager {
         }
     }
     
-    
     private func loadDynamicTokens() -> [DSColor] {
         let loader = ResourceLoader()
         var file = String()
@@ -83,28 +83,20 @@ public class TokenManager {
         
         let tokens = loader.readJSONFile(forName: file)
         return tokens.foundation.filter { $0.type == "color" }.compactMap {
-            DSColor(colorHex: colors[$0.value]?._hexString ?? "", value: $0.value, identifier: $0.name)
+            let colorHex = colors[$0.value]?._hexString ?? ""
+            return DSColor(colorHex: colorHex, value: $0.value, identifier: $0.name)
         }
     }
     
     public func getColorFor(name: ColorEnum) -> DSColor {
-        guard let color = colors[name.rawValue] else {
-            return DSColor()
-        }
-        return color
+        return colors[name.rawValue] ?? DSColor()
     }
     
     public func getDynamicColor(name: DynamicColorEnum) -> DSColor {
-        guard let color = dynamicColors[name.rawValue] else {
-            return DSColor()
-        }
-        return color
+        return dynamicColors[name.rawValue] ?? DSColor()
     }
     
     func getSpacing(name: Spacing) -> DSSpacing {
-        guard let spacing = spacing[name.rawValue] else {
-            return DSSpacing()
-        }
-        return spacing
+        return spacing[name.rawValue] ?? DSSpacing() 
     }
 }

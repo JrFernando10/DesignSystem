@@ -25,7 +25,7 @@ class DesignSystemTypographyViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = .dsSpacing(.token200)
-        stackView.alignment = .center
+        stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -52,7 +52,6 @@ class DesignSystemTypographyViewController: UIViewController {
             label.translatesAutoresizingMaskIntoConstraints = false
             label.font = font.font(size: 16)
             label.text = font.rawValue
-            label.textAlignment = .left
             stackView.addArrangedSubview(label)
         }
 
