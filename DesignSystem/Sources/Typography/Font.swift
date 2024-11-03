@@ -52,7 +52,7 @@ public enum Font: String, CaseIterable {
 }
 
 extension Font {
-    func font(size: CGFloat, withText text: String) -> (UIFont, String) {
+    public func font(size: CGFloat, withText text: String) -> (UIFont, String) {
         let font = self.font(size: size) ?? UIFont.systemFont(ofSize: size) 
         return (font, text)
     }
