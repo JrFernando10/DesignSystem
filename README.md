@@ -19,7 +19,7 @@ To install this design system using CocoaPods, follow these steps:
 
 3. Open the `Podfile` and add the following line to include the design system:
    ```ruby
-   pod 'DesignSystem', '~> 0.0.2'
+   pod 'DesignSystem', :git => 'https://github.com/JrFernando10/DesignSystem', :tag => '0.0.2'
    ```
 
 4. Save the `Podfile` and run the following command to install the pod:
